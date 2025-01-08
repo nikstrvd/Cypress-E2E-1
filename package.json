@@ -1,7 +1,18 @@
 {
   "name": "cypress-e2e",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cypress-E2E",
+  "homepage": "https://github.com/Anshita-Bhasin/Cypress-E2E#readme",
+  "bugs": {
+    "url": "https://github.com/Anshita-Bhasin/Cypress-E2E/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anshita-Bhasin/Cypress-E2E.git"
+  },
+  "license": "ISC",
+  "author": "Anshita Bhasin",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "test:addToCart": "npx cypress run --spec cypress/e2e/tests/addToCartTest.cy.js --record --key fb12f2c3-308b-4a42-a1c3-fec27aa0768e",
@@ -10,21 +21,11 @@
     "test": "npx cypress run --record --key fb12f2c3-308b-4a42-a1c3-fec27aa0768e",
     "cy:parallel": "cypress-parallel -s cy:run -t 2 -d cypress/e2e/tests -a "
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Anshita-Bhasin/Cypress-E2E.git"
+  "dependencies": {
+    "cypress-parallel": "^0.13.0"
   },
-  "author": "Anshita Bhasin",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Anshita-Bhasin/Cypress-E2E/issues"
-  },
-  "homepage": "https://github.com/Anshita-Bhasin/Cypress-E2E#readme",
   "devDependencies": {
     "cypress": "13.0",
     "cypress-mochawesome-reporter": "^3.5.1"
-  },
-  "dependencies": {
-    "cypress-parallel": "^0.13.0"
   }
 }
